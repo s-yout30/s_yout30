@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+
+header {
+    background-color: #22d3ee;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+
+  @media screen and (max-width:1280px) {
+    header{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width:767px) {
+    header{
+      display: none;
+    }
+  }
+
+  body{
+    
+    font-family: "M PLUS Rounded 1c", 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', Sans-serif;
+    margin:0;
+}
+
+  .list-nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    list-style: none;
+
+  }
+
+  .header-list{
+    justify-content: flex-end;
+    margin-right: 5%;
+    
+  }
+
+
+  .list a{
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.5s 0s ease;
+  }
+
+  .list a:hover{
+    filter: invert(1);
+    border-bottom:1px solid #000;
+    letter-spacing: 0.2em;
+  }
+
+
+.top-container{
+    
+    width: 100%;
+    min-height: 50vh;
+    margin:0 auto;
+    background-color:#22d3ee;
+    text-align: left;
+    position: relative;
+   
+  }
+
+@media screen and ((max-width:767px)) {
+  .top-container{
+    
+    width: 100%;
+    min-height: 50vh;
+    margin:0 auto;
+    background-color:#22d3ee;
+    text-align: left;
+    position: relative;
+   
+  }
+}
+
+.top-logo{
+    width:70%;
+    position: relative;
+    z-index: 20;
+    padding-bottom: 180px;
+}
+
+@media screen and ((max-width:767px)) {
+  .top-logo{
+    width:80%;
+    position: relative;
+    z-index: 20;
+    padding: 20px 0px;
+}
+}
+
+.top-gif{
+    width:65%;
+    position:absolute;
+    bottom:0;
+    right: 20%;
+    transform: translateX(30%);
+    z-index: 10;
+}
+
+@media screen and ((max-width:767px)) {
+  .top-gif{
+    width:80%;
+}
+}
+
+.bottom-background{
+background-color: 	#FFFDE2;
+min-height: 30vh;
+width: 100%;
+display: flex;
+align-items: center;
+
+}
+
+.menu{
+    margin:0 auto;
+    height: 100px;
+    width: 400px;
+}
+
+.menu-list{
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding: 0;
+    background-color:  #d1ba90;
+    border-radius: 30px;
+    justify-content: center;
+
+
+    
+}
+
+.menu-list a{
+    font-size:16px;
+
+}
+
+.footer{
+    background-color: #d1ba90;
+    width: 100%;
+    height: 20vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer p{
+    color:white;
+    letter-spacing: 0.3em;
+    font-size:18px;
+}
+
+
+
