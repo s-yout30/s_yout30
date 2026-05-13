@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+html{
+  font-size: 62.5%;
+}
+
+header {
+    background-color: #22d3ee;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    
+  }
+
+body{
+    margin:0;
+    font-family: "M PLUS Rounded 1c", 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', Sans-serif;
+}
+
+.list-nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    list-style: none;
+
+  }
+
+  .header-list{
+    justify-content: flex-end;
+    margin-right: 5%;
+    
+  }
+
+
+  .list a{
+    color:black;
+    font-size: clamp(1.2rem, calc(1rem + 1.4vw), 2rem);
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.5s 0s ease;
+  }
+
+  .list a:hover{
+    filter: invert(1);
+    border-bottom:1px solid #000;
+    letter-spacing: 0.2em;
+  }
+
+.top-background{
+    min-height: 20vh;
+    background-color: #22d3ee;
+    
+}
+
+.top-container{
+    
+    width: 90%;
+    min-height: 10%;
+    margin:0 auto;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    margin-bottom: 5%;
+    
+}
+
+.top-logo{
+    width:40%;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:-30%;
+    
+    
+}
+
+.contact{
+    width: 80vw;
+    margin:0 auto;
+}
+
+.contact p{
+  font-size: clamp(1.2rem, calc(1rem + 1.4vw), 2rem);
+}
+
+.contact_form_title{
+    font-weight: bold;
+}
+
+.contact_form_input{
+    width:100%;
+    border:none;
+    background-color: #eee;
+    height:12vh;
+    padding: 2.5em 2em;
+}
+
+.contact_form_input--message{
+    height: 30vh;
+}
+
+
+
+.error_message {
+  font-size: clamp(1.2rem, calc(1rem + 1.4vw), 2rem);
+    color: #ff7676;
+    display: none; 
+  }
+
+  input:invalid + .error_message  {
+    display: block;
+  }
+
+  .error_message--mail {
+    font-size: clamp(1.2rem, calc(1rem + 1.4vw), 2rem);
+    color: #ff7676;
+    display: none; 
+  }
+
+  input:user-invalid + .error_message--mail  {
+    display: block;
+  }
+
+  textarea:invalid + .error_message  {
+    display: block;
+  }
+
+.contact_form_button{
+    width: 250px; 
+    background-color: #1184ff; 
+    color: #fff; 
+    font-weight: bold; 
+    display: block; 
+    margin: 0 auto; 
+    font-size: clamp(1.2rem, calc(1rem + 1.4vw), 2rem);
+    padding: 15px; 
+    margin-top: 10%;
+    border-radius: 100vh; 
+    border: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+  }
+
+  form:has(input:invalid) .contact_form_button{
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .footer{
+    background-color: #d1ba90;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .footer p{
+    color:white;
+    letter-spacing: 0.3em;
+    font-size: clamp(1.2rem, calc(1rem + 1.4vw), 2rem);
+  }
+  

@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+html{
+    font-size: 62.5%;
+}
+
+header {
+    background-color: #22d3ee;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    
+  }
+
+  body{
+    
+    font-family: "M PLUS Rounded 1c", 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', Sans-serif;
+    margin:0;
+    width: 100%;
+}
+
+  .list-nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    list-style: none;
+
+  }
+
+  .header-list{
+    justify-content: flex-end;
+    margin-right: 5%;
+    
+  }
+
+
+  .list a{
+    color:black;
+    font-size: clamp(1.2rem, calc(1rem + 1.4vw), 2rem);
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.5s 0s ease;
+  }
+
+  .list a:hover{
+    filter: invert(1);
+    border-bottom:1px solid #000;
+    letter-spacing: 0.2em;
+  }
+.top-background{
+    min-height: 20vh;
+    background-color: #22d3ee;
+    
+}
+
+
+
+.top-container{
+    
+    width: 90%;
+    margin:0 auto;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    margin-top:10%;
+    margin-bottom: 10%;
+}
+
+.top-logo{
+    width:40%;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:-55%;
+    
+}
+
+.top-gif{
+    width:60%;
+    background-color: #f2ebeb;
+    margin:0 auto;
+}
+
+@media screen and (max-width:767px) {
+    .top-gif{
+        width: 100%;
+    }
+}
+
+.profile-section{
+    width:95%;
+    margin-left:5%;
+    
+}
+
+.name{
+    width:80%;
+}
+
+.column-2type{
+    display:flex;
+    align-items: flex-end;
+    justify-content: stretch;
+    position:relative;
+}
+
+.column-left{
+    top:10%;
+    left: 0;
+    width: 55%;
+    
+    min-height:80vh;
+}
+
+@media screen and (max-width:767px) {
+    .column-left{
+        width: 90%;
+    }
+}
+
+.column-left p{
+    position: relative;
+    top:5%;
+    left: 0;
+    width: 100%;
+    font-size: clamp(1.2rem, calc(1rem + 1.4vw), 2rem);
+    z-index: 2;
+
+    -webkit-text-stroke: 2px white;
+    paint-order: stroke;
+}
+
+
+
+.column-right-img{
+    position:absolute;
+    right:0;
+    width:55%;
+    height:auto;
+    z-index: 0;
+
+    opacity: 0.6;
+}
+
+@media screen and (max-width:767px) {
+    .column-right-img{
+        width: 70%;
+        opacity: 0.4;
+    }
+}
+
+
+
+
+.footer{
+    background-color: #d1ba90;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer p{
+    color:white;
+    letter-spacing: 0.3em;
+    font-size: clamp(1.2rem, calc(1rem + 1.4vw), 2rem);
+}
