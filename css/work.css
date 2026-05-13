@@ -174,6 +174,7 @@ body{
 
   .popup__text p{
     color:white;
+    font-size:clamp(1.2rem, calc(1rem + 1.4vw), 2rem);
   }
 
   .to_card_cheers{
